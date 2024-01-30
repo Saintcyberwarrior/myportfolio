@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  color: #63250c;
+  color: #e3aa7b;
   text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #63250c;
+  background: #e3aa7b;
   color: #000000;
 }
 .back-to-top.active {
@@ -53,17 +53,25 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: #090909;
-  font-size: 15px;
-  height: 40px;
+  font-size: 20px;
+  height: 50px;
   padding: 0;
 }
+@media (max-width:500px) {
+	.logo {
+  font-size: 1px; /* Default font size */
+}
+}
+
+
+
 #topbar .contact-info a {
   line-height: 0;
   color: #444444;
   transition: 0.3s;
 }
 #topbar .contact-info a:hover {
-  color: #63250c;
+  color: #e3aa7b;
 }
 #topbar .contact-info i {
   color: #6f6f6f;
@@ -81,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #topbar .social-links a:hover {
-  color: #63250c;
+  color: #e3aa7b;
 }
 
 /*--------------------------------------------------------------
@@ -97,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #header .logo {
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -106,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 #header .logo a {
-  color: #7c4416;
+  color: #e3aa7b;
 }
 #header .logo img {
   max-height: 40px;
@@ -151,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #ffffff;
+  color: #e3aa7b;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   color: #7c4419;
@@ -163,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-  background: #ffffff;
+  background: #e3aa7b;
   color: #000000;
 }
 .navbar .dropdown ul {
@@ -491,7 +499,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .icon-box:hover {
   background: #309e42;
-  border-color: #ffffff;
+  border-color: #e3aa7b;
 }
 .icon-box:hover .icon {
   background: #0c1cfd;
@@ -500,7 +508,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 .icon-box:hover .icon::before {
-  background: #ffffff;
+  background: #e3aa7b;
 }
 .icon-box:hover h4 a,.icon-box:hover p {
   color: rgb(255, 255, 255);
@@ -633,7 +641,7 @@ h1, h2, h3, h4, h5, h6 {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #5cb874;
+  background: #7c4416;
   color: #000000;
   line-height: 1;
   padding: 8px 0;
@@ -645,7 +653,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #449d5b;
+  background: #e3aa7b;
   color: #000000;
   text-decoration: none;
 }
@@ -656,51 +664,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
 }
 
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team .member {
-  text-align: center;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 20px;
-  background: #000000;
-}
-.team .member img {
-  max-width: 60%;
-  border-radius: 50%;
-  margin: 0 0 30px 0;
-}
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-.team .member p {
-  padding-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #aaaaaa;
-}
-.team .member .social {
-  margin-top: 15px;
-}
-.team .member .social a {
-  color: #919191;
-  transition: 0.3s;
-}
-.team .member .social a:hover {
-  color: #e96b56;
-}
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
 
 #button{
   padding: 150px;
@@ -752,4 +715,43 @@ h1, h2, h3, h4, h5, h6 {
 
 #certifications .row{
   color: #000000;
+}
+#footer ul {
+	list-style: none;
+	margin: 10px;
+}
+.footer-links li{
+	margin-bottom:20px;
+}
+
+.skill-card {
+	background-color:rgb(18, 18, 18);
+	color: white;
+	height: 300px;
+	margin-bottom: 18px;
+
+}
+
+.responsibility-card{
+	background-color:rgb(18, 18, 18);
+	color: white;
+	height: 100px;
+	margin-bottom: 18px;
+
+
+}
+
+.project-card{
+	background-color:rgb(18, 18, 18);
+	color: white;
+	height: 245px;
+	margin-bottom: 18px;
+
+}
+
+.experience-card{
+	background-color:rgb(18, 18, 18);
+	color: white;
+	height: 310px;
+	margin-bottom: 18px;
 }
