@@ -1,701 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yash Vardhan Bhobia - Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta name="description" content="Portfolio of Yash Vardhan Bhobia - Researcher & Senior Undergrad at IISc">
+  <meta name="keywords" content="Material Science, Spintronics, Quantum Computing, Research">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS -->
   <link href="css/style1.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-dark">
+  <!-- Floating Particles Background -->
+  <div class="particles-background"></div>
 
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:yashvardhan@iisc.ac.in">Email</a>
-
+  <!-- Top Bar -->
+  <nav class="topbar navbar py-2 border-bottom border-secondary">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <i class="bi bi-envelope-fill me-2 text-primary"></i>
+        <a href="mailto:yashvardhan@iisc.ac.in" class="text-white text-decoration-none">Email</a>
       </div>
-
       <div class="social-links">
-        <!-- <a href="https://twitter.com/yourtwitter" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-        <a href="https://www.linkedin.com/in/yash-vardhan-b-1247321a3" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/Saintcyberwarrior" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <!-- Add more social media links as needed -->
+        <a href="https://www.linkedin.com/in/yash-vardhan-b-1247321a3" target="_blank" class="text-white mx-2">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/Saintcyberwarrior" target="_blank" class="text-white mx-2">
+          <i class="bi bi-github"></i>
+        </a>
       </div>
-      <!-- <p>&copy; 2024 Your Name. All rights reserved.</p> -->
     </div>
-    </div>
-  </section>
+  </nav>
 
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-
-      <h3 class="logo me-auto"><a href="index.html">Yash Vardhan Bhobia</a></h3>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
-          <li><a class="nav-link scrollto" href="#work-experience">Work Experiences</a></li>
-          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
-          <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
+  <!-- Header -->
+  <header class="sticky-top bg-dark-90 backdrop-blur">
+    <nav class="navbar navbar-expand-lg container py-3">
+      <a class="navbar-brand fw-bold text-gradient" href="#">Yash Vardhan Bhobia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <!-- .navbar -->
-    </div>
+      </div>
+    </nav>
   </header>
-  <style>
-    /* Default styles for the video */
-    .bg-video {
-      width: 100%;
-      height: auto;
-    }
 
-    /* Media query for smaller screens */
-    @media (max-width: 767px) {
-      .bg-video {
-        height: 280px;
-        /* Allow the height to adjust proportionally */
-      }
-    }
-
-    .custom-circle-image {
-      width: 50%;
-      /* Adjust the width as needed */
-      height: auto;
-      /* Adjust the height as needed */
-    }
-
-    .col-md-6 {
-      padding-top: 5px;
-    }
-  </style>
-  <!-- About Section  -->
-
-  <!-- ======= Intro Section ======= -->
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <!-- <h2>Introduction</h2> -->
+  <!-- Hero Section -->
+  <section id="home" class="hero-section py-5">
+    <div class="container text-center py-5" data-aos="fade-up">
+      <div class="avatar-wrapper mx-auto mb-4">
+        <img src="yash_potrait_face copy.jpg" alt="Yash Vardhan Bhobia" 
+             class="avatar-img rounded-circle shadow-lg">
       </div>
-
-      <div class="row content">
-        <div class="col-lg-6 pt-4 text-center">
-          <!-- Add your image here -->
-          <img src="yash_potrait_face copy.jpg" alt="Yash Profile Pic" class="img-fluid rounded-circle custom-circle-image">
-          <br>
-          <hr>
-          <!-- Download Resume Button -->
-          <a href="https://drive.google.com/file/d/1iouev2lJtf95KOHsY2YIjdlFj7oScdK1/view?usp=sharing" download
-            class="btn btn-primary mt-3" style="margin-bottom:15px;">Download Resume</a>
-
-        </div>
-
-        <div class="col-lg-6">
-          <div class="intro-text">
-            <h2>
-              <p>
-                Hi! My name is Yash Vardhan Bhobia.
-              </p>
-            </h2>
-            <hr>
-
-            <p>
-              <strong>Researcher | Senior year undergrad</strong>
-            </p>
-
-            <p style="text-align: justify;">
-	    I'm currently pursuing a major in Material Science with specializations in Spintronics, Magnetic Devices, and Micromagnetic Simulations as an senior year undergrad at Indian Institute of Science(IISc). I am a National Talent Search Examination Awardee, Kishore Vigyan Protshan Yojna Fellow, and Inspire DST Fellow. Beyond my current research interests, I'm captivated by Quantum Computing, neuromorphic computing, and related domains. On the extracurricular front, I've served as the convenor of <I>"Debug"</I> (CS-Coding UG Club at IISc), Chief Finance Coordinator at the annual cultural and Sci-tech fest of IISc, Pravega, and engaged in private tutoring for international Olympiads and college admission examinations(IIT-JEE) in India. I'm also a proud volunteer for the NoteBook Drive, providing free education to underprivileged primary school kids. </p>
-
-	    <p style="text-align: justify;"> Outside the academic realm, I find joy in bike rides to hill stations, surrounded by nature's beauty. I'm an avid reader of poetry, enjoy sketching portraits, indulge in classic music, and find relaxation in watching anime. Basketball and badminton are my go-to sports, adding a dynamic touch to my interests. Looking ahead, my passion for teaching drives a long-term goal of mentoring and providing free, quality education for young minds. I aspire to contribute to the next technological revolution as we navigate the ever-evolving landscape of our computational world.
-                          </p>
-
-            <hr>
-
-            <!-- <ul>
-                            <li>🌍 I'm based in Ahmedabad</li>
-                            <li>✉️ You can contact me at <a
-                                    href="mailto:kapaliyasarthak@gmail.com">kapaliyasarthak@gmail.com</a></li>
-                        </ul> -->
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Intro Section -->
-
-
-
-  <!-- Work Experience Section -->
-  <section id="work-experience" class="container mt-5">
-    <h2>Work Experience</h2>
-
-    <div class="row">
-      <!-- Research Assistant -->
-      <div class="col-md-6">
-        <div class="card experience-card">
-          <div class="card-body">
-            <h5 class="card-title">Research Assistant</h5>
-            <p class="card-text">IMRE, A*STAR Research Entities, Singapore, Singapore<br>May 2023 – July 2023</p>
-            <ul>
-		    <li>Worked on ananlysis of switching efficiency for skyrmionic tunnel junction device for memory applications.</li>
-
-              <li>Developed simulation models for chiral tunnel junction device to understand the effect of anisotropy and device dimenstions on the behaviour of nucleated skyrmions.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Research Intern -->
-      <div class="col-md-6">
-        <div class="card experience-card">
-          <div class="card-body">
-            <h5 class="card-title">Research Intern</h5>
-            <p class="card-text">Garrett Advancing Motion, Bangalore, India<br>June 2022 – July 2022</p>
-            <ul>
-              <li>Developed ANN for material selection to address material design challenges for turbocharger housing. </li>
-              <li>Utlised genetic algorithm for solveing Johnson Cook Model for understanding the plasticity behaviour in various metallic alloys.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Research Intern (Vision Lab) -->
-
-      <div class="col-md-6">
-        <div class="card experience-card">
-          <div class="card-body">
-            <h5 class="card-title">Research Intern</h5>
-	    <p class="card-text">Vision Lab, Indian Institute of Science, Bangalore, Indian<br> May 2021-July 2021</p>
-            <ul>
-              <li>Helped in developement of an eye-tracking model using YOLO framework.</li>
-              <li>Learned about Computer Vision and about cognitive behaviour in animals. Explored how various ML models are utilised for analysis of experimental results in real-life situations.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Research Intern (CDS, IISc) -->
-      <div class="col-md-6">
-        <div class="card experience-card">
-          <div class="card-body">
-		  <h5 class="card-title">Research Intern</h5>
-            <p class="card-text">Department for Computational and Data Sciences, Indian Institute of Science, Bangalore, India<br>May 2021-July 2021</p>
-            <ul>
-              <li>Undertook a reading project on Zero Shot Knowledge Distillation technique for machine learning model training.</li>
-              <li>Optimised the model technique for various frameworks, including ResNet 18, AlexNet and Half-AlexNet.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more experience cards as needed -->
-
+      <h1 class="display-4 fw-bold text-gradient mb-3">Researcher & Senior Undergrad</h1>
+      <p class="lead text-muted mb-4">Spintronics • Magnetic Devices • Micromagnetic Simulations</p>
+      <a href="#contact" class="btn btn-primary btn-lg px-4 me-2">Contact Me</a>
+      <a href="https://drive.google.com/file/d/1iouev2lJtf95KOHsY2YIjdlFj7oScdK1/view" 
+         class="btn btn-outline-light btn-lg px-4">Download CV</a>
     </div>
   </section>
 
-  <!-- Publications Section -->
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header mb-5">
+        <h2 class="text-gradient">About Me</h2>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="card glass-card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-4">Academic Journey</h3>
+              <p class="card-text">Pursuing Material Science at IISc with specializations in Spintronics and Magnetic Devices. Recognized as NTSE Awardee and KVPY Fellow.</p>
+              <div class="achievements mt-4">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-award fs-4 text-primary me-3"></i>
+                  <div>
+                    <h5 class="mb-0">NTSE Scholar</h5>
+                    <small class="text-muted">National Talent Search Examination</small>
+                  </div>
+                </div>
+                <!-- Add more achievements -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card glass-card h-100">
+            <div class="card-body">
+              <h3 class="card-title mb-4">Research Interests</h3>
+              <div class="row g-3">
+                <div class="col-md-6" data-aos="zoom-in">
+                  <div class="interest-card p-3 rounded">
+                    <i class="bi bi-motherboard fs-2 text-primary"></i>
+                    <h5 class="mt-2">Quantum Computing</h5>
+                  </div>
+                </div>
+                <!-- Add more interest cards -->
+              </div>
+              <hr class="my-4">
+              <h5 class="mb-3">Personal Interests</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-primary-soft">Bike Riding</span>
+                <span class="badge bg-primary-soft">Portrait Sketching</span>
+                <!-- Add more badges -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
+  <!-- Experience Section -->
+  <section id="experience" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header mb-5">
+        <h2 class="text-gradient">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content card glass-card">
+            <div class="card-body">
+              <h4>Research Assistant</h4>
+              <h5 class="text-muted">IMRE, A*STAR</h5>
+              <div class="timeline-date">May 2023 – July 2023</div>
+              <ul class="mt-3">
+                <li>Developed simulation models for chiral tunnel junction devices</li>
+                <li>Analyzed switching efficiency for skyrmionic memory applications</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Add more timeline items -->
+      </div>
+    </div>
+  </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="container mt-5">
-    <h2>Projects</h2>
-
-    <div class="row">
-      <!-- Plastic Waste Detection -->
-      <div class="col-md-6">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Material design for maximising both the Voltage Controlled magnetic anisotropy coefficient and perpendicular magnetic anisotropy.</h5>
-            <p class="card-text">
-		<ul>
-			<li>Conducting micromagnetic simulations with mumax3 to optimize spacer layer thickness in multilayer device stacks for memory applications, aiming for favorable VCMA coefficient and perpendicular magnetic anisotropy.
-</ul>
-	    </p>
+  <section id="projects" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header mb-5">
+        <h2 class="text-gradient">Projects</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="zoom-in">
+          <div class="card project-card h-100">
+            <div class="card-body">
+              <div class="project-badge">Ongoing</div>
+              <h4 class="card-title">Magnetic Anisotropy Optimization</h4>
+              <p class="card-text">Micromagnetic simulations using Mumax3 for VCMA coefficient optimization...</p>
+              <div class="tech-stack mt-3">
+                <span class="badge bg-dark">Mumax3</span>
+                <span class="badge bg-dark">Python</span>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Add more project cards -->
       </div>
-
-      <!-- Song Recommendation Engine -->
-      <div class="col-md-6">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">On-chip high-energy storage devices integrated with solid-state batteries</h5>
-            <p class="card-text">
-		<ul>
-			<li> Worked on development of non-linear thin film device using BiFeO3-BaTiO3 composites and Hafnia-Zirconia based systems, achieving high energy density and power requirements.
-			</ul>
-	    </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- OCR Web Portal -->
-      <div class="col-md-6">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">In-kernel, per-process, system-call sandbox</h5>
-            <p class="card-text">
-	    <ul>
-	    <li>Using Linux Security Modules(LSM), implemented a syscall sandbox using syscall hooks in kernel, guided from a control flow graph developed from angr tool in python.
-		    <li> Also implimented similar syscall sandbox using ptrace utility in place of LSMs.
-		</ul>
-	    </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Poster on design of neuron and synapse for spiking neural network using skyrmion based devices
-      <div class="col-md-6">
-        <div class="card project-card">
-          <div class="card-body">
-            <h5 class="card-title">Design of neuron and synapse for Spiking Neural Network using Skyrmion based devices
-</h5>
-            <p class="card-text">Nodejs, Firebase, Reactjs, Twilio API, Replit Git | Feb - March 2023</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more project cards as needed -->
-
     </div>
   </section>
-
-
-  <!-- Positions of Responsibility Section -->
-  <section id="responsibilities" class="container mt-5">
-    <h2>Positions of Responsibility</h2>
-
-    <div class="row">
-      <!-- Convenor--Debug -->
-      <div class="col-md-6">
-        <div class="card responsibility-card">
-          <div class="card-body">
-            <h5 class="card-title">Convenor</h5>
-            <p class="card-text">Debug: UG Computer Science Club, IISc | Jan 2022 - Jan 2023</p>
-            <!-- Add your content here -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Finance Head--Pravega -->
-      <div class="col-md-6">
-        <div class="card responsibility-card">
-          <div class="card-body">
-            <h5 class="card-title">Chief Finance Coordinator</h5>
-            <p class="card-text">Pravega: Annual Cultural and Sci-tech Fest at IISc | Jan 2022 - Sept 2022</p>
-            <!-- Add your content here -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Public Relation Memeber-Pravega -->
-      <div class="col-md-6">
-        <div class="card responsibility-card">
-          <div class="card-body">
-            <h5 class="card-title">Member, Volunteer</h5>
-            <p class="card-text">Sponsorship and Public Relations Team, Pravega | Jan 2022 - Sept 2022</p>
-            <!-- Add your content here -->
-          </div>
-        </div>
-      </div>
-
-      <!-- NBD-- Member -->
-      <div class="col-md-6">
-        <div class="card responsibility-card">
-          <div class="card-body">
-            <h5 class="card-title">Member, Volunteer</h5>
-            <p class="card-text">NoteBook Drive, IISc | Aug 2023 - Present
-            </p>
-            <!-- Add your content here -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more responsibility cards as needed -->
-
-    </div>
-  </section>
-
-  <!-- Academic Achievements Section
-<section id="achievements" class="container mt-5">
-    <h2>Academic Achievements</h2>
-
-    <div class="row">
-        <!-- Achievement 1
-        <div class="col-md-6">
-            <div class="card achievement-card">
-                <div class="card-body">
-                    <p class="card-text">Ranked 6th in GeeksForGeeks Progeek Cup Competition 2021.</p>
-                    <!-- Add your content here
-                </div>
-            </div>
-        </div>
-
-        <!-- Achievement 2
-        <div class="col-md-6">
-            <div class="card achievement-card">
-                <div class="card-body">
-                    <p class="card-text">Top 15 in AI-driven Hackathon for Plastic-Free Rivers utilizing AI for sustainability.</p>
-                    <!-- Add your content here
-                </div>
-            </div>
-        </div>
-
-        <!-- Add more achievement cards as needed
-
-    </div>
-</section>   -->
 
   <!-- Skills Section -->
- <section id="skills" class="container mt-5">
-  <h2>Skills</h2>
-
-  <div class="row">
-    <!-- Material Characterization/Fabrication Skills -->
-    <div class="col-md-6">
-      <div class="card mb-4 skill-card">
-        <div class="card-body" >
-          <h3 class="card-title">Material Characterization/Fabrication Skills</h3>
-          <ul>
-            <li>DC/RF Sputtering</li>
-            <li>Scanning Electron Microscope</li>
-            <li>X-Ray Diffraction</li>
-            <li>Probe Station</li>
-            <li>Alternating Gradient Magnetometer</li>
-          </ul>
-        </div>
+  <section id="skills" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header mb-5">
+        <h2 class="text-gradient">Technical Skills</h2>
       </div>
-    </div>
-
-    <!-- Data Analysis/Simulation Skills -->
-    <div class="col-md-6">
-      <div class="card mb-4 skill-card">
-        <div class="card-body">
-          <h3 class="card-title">Data Analysis/Simulation Skills</h3>
-          <ul>
-            <li>MuMax3</li>
-            <li>Quantum ESPRESSO</li>
-            <li>XCrySDen</li>
-            <li>VESTA</li>
-            <li>MATLAB</li>
-            <li>LabView</li>
-            <li>Origin</li>
-            <li>Wolfram Mathematica</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Other Material Science Skills -->
-    <div class="col-md-6">
-      <div class="card mb-4 skill-card">
-        <div class="card-body">
-          <h3 class="card-title">Other Material Science Skills</h3>
-          <ul>
-            <li>Materials thermodynamics</li>
-            <li>Structure of materials</li>
-            <li>Metallurgy</li>
-            <li>Metal Injection moulding and related technologies</li>
-            <li>Sintering process</li>
-            <li>UTM Mechanical testing</li>
-            <li>Microhardness testing</li>
-            <li>Differential Scanning Calorimetry (DSC)</li>
-            <li>UV-vis spectroscopy</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Languages -->
-    <div class="col-md-6">
-      <div class="card mb-4 skill-card">
-        <div class="card-body">
-          <h3 class="card-title">Languages</h3>
-          <ul>
-            <li>Python</li>
-            <li>C</li>
-            <li>Java</li>
-            <li>MATLAB</li>
-            <li>Git</li>
-            <li>Bash</li>
-            <li>Assembly(Basic)</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Frameworks -->
-    <div class="col-md-6">
-      <div class="card mb-4 skill-card">
-        <div class="card-body">
-          <h3 class="card-title">Frameworks</h3>
-          <ul>
-            <li>Angr</li>
-            <li>SciKit</li>
-            <li>TensorFlow</li>
-            <li>Keras</li>
-            <li>Pytorch</li>
-            <li>YOLO</li>
-            <li>Scipy</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!---
-    <p align="left">
-      <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg"
-          width="36" height="36" alt="C" /></a>
-      <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
-          width="36" height="36" alt="C++" /></a>
-      <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg"
-          width="36" height="36" alt="Java" /></a>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-          width="36" height="36" alt="JavaScript" /></a>
-      <a href="https://kotlinlang.org/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/kotlin-colored.svg"
-          width="36" height="36" alt="Kotlin" /></a>
-      <a href="https://www.php.net/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg"
-          width="36" height="36" alt="PHP" /></a>
-      <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
-          width="36" height="36" alt="Python" /></a>
-      <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
-          width="36" height="36" alt="TypeScript" /></a>
-      <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-          width="36" height="36" alt="HTML5" /></a>
-      <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-          width="36" height="36" alt="React" /></a>
-      <a href="https://jquery.com/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg"
-          width="36" height="36" alt="JQuery" /></a>
-      <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-          width="36" height="36" alt="CSS3" /></a>
-      <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg"
-          width="36" height="36" alt="Bootstrap" /></a>
-      <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
-          width="36" height="36" alt="TailwindCSS" /></a>
-      <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
-          width="36" height="36" alt="NodeJS" /></a>
-      <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg"
-          width="36" height="36" alt="MySQL" /></a>
-      <a href="https://www.heroku.com/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg"
-          width="36" height="36" alt="Heroku" /></a>
-      <a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flask-colored-dark.svg"
-          width="36" height="36" alt="Flask" /></a>
-      <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/django-colored-dark.svg"
-          width="36" height="36" alt="Django" /></a>
-      <a href="https://flutter.dev/" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flutter-colored.svg"
-          width="36" height="36" alt="Flutter" /></a>
-      <a href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer"><img
-          src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored-dark.svg"
-          width="36" height="36" alt="Photoshop" /></a>
-    </p>
---->
-  </section>
-<!--
-  <!-- Certifications Section
-  <section id="certifications" class="container mt-5">
-    <h2>Certifications</h2>
-
-    <div class="row">
-      <!-- Certification 1
-      <div class="col-md-6">
-        <div class="card certification-card">
-          <div class="card-body">
-            <p class="card-text">Udacity Nanodegree: AI Programming with Python, ML Fundamentals</p>
-            <!-- Add your content here
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card glass-card h-100">
+            <div class="card-body">
+              <h4 class="mb-4"><i class="bi bi-tools me-2"></i>Experimental Skills</h4>
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between">
+                  <span>DC/RF Sputtering</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress bg-dark">
+                  <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                </div>
+              </div>
+              <!-- Add more skill items -->
+            </div>
           </div>
         </div>
+        <!-- Add more skill columns -->
       </div>
-
-      <!-- Certification 2
-      <div class="col-md-6">
-        <div class="card certification-card">
-          <div class="card-body">
-            <p class="card-text">Microsoft Certified: MLOps, AI Fundamentals, Azure Fundamentals</p>
-            <!-- Add your content here -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Certification 3
-      <div class="col-md-6">
-        <div class="card certification-card">
-          <div class="card-body">
-            <p class="card-text">NPTEL IIT Kharagpur: Deep Learning</p>
-            <!-- Add your content here
-          </div>
-        </div>
-      </div>
-
-      <!-- Certification 4
-      <div class="col-md-6">
-        <div class="card certification-card">
-          <div class="card-body">
-            <p class="card-text">IBM: Data Analytics Internship at CSRBox, Introduction to Data Science, Data Science
-              Tools Certification</p>
-            <!-- Add your content here
-          </div>
-        </div>
-      </div>
-
-      <!-- Certification 5
-      <div class="col-md-6">
-        <div class="card certification-card">
-          <div class="card-body">
-            <p class="card-text">ISRO: Geoprocessing With Python Certification</p>
-            <!-- Add your content here
-          </div>
-        </div>
-      </div>
-
-      <!-- Certification 6
-      <div class="col-md-6">
-        <div class="card certification-card">
-          <div class="card-body">
-            <p class="card-text">Columbia University, EdX: Machine Learning for Data Science and Analytics</p>
-            <!-- Add your content here
-          </div>
-        </div>
-      </div>
-
-      <!-- Certification 7
-      <div class="col-md-6">
-        <div class="card certification-card">
-          <div class="card-body">
-            <p class="card-text">Udemy: Complete Machine Learning and Data Science with Python, Python for Beginners: A
-              to Z Concise Hands-on Course (2022)</p>
-            <!-- Add your content here
-          </div>
-        </div>
-      </div>
-
-      <!-- Add more certification cards as needed
-
     </div>
   </section>
 
-  --->
-  <br><br>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="bg-dark text-light">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-4 col-md-6 footer-links" >
-          <h4>Quick Links</h4>
-          <ul style="padding-right:30px" id="quick-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+  <!-- Footer -->
+  <footer id="contact" class="footer bg-dark-80 py-5">
+    <div class="container text-center">
+      <h2 class="text-gradient mb-4">Let's Connect</h2>
+      <div class="contact-info mb-5">
+        <p class="lead mb-4">
+          <i class="bi bi-geo-alt-fill me-2"></i>Indian Institute of Science, Bangalore
+        </p>
+        <div class="d-flex justify-content-center gap-3 mb-4">
+          <a href="mailto:yashvardhan@iisc.ac.in" class="btn btn-outline-light">
+            <i class="bi bi-envelope me-2"></i>Email
+          </a>
+          <a href="https://linkedin.com/in/yash-vardhan" class="btn btn-outline-light">
+            <i class="bi bi-linkedin me-2"></i>LinkedIn
+          </a>
         </div>
-
-        <div class="col-lg-4 col-md-6 footer-info">
-          <h5 style="color: aliceblue;">उद्यमेन हि सिध्यन्ति कार्याणि न मनोरथैः। <br>न हि सुप्तस्य सिंहस्य प्रविशंति मुखे मृगाः।</h5>
-	  <br>
-	  <p>
-            Thank you for visiting my portfolio!<br>
-          </p>
-        </div>
-
-        <div class="col-lg-4 col-md-6 footer-contact">
-          <h4>Contact Information</h4>
-	  <p>
-	  <a href="https://www.google.com/maps/place/Indian+Institute+of+Science/@13.0143881,77.5651411,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17d757d11bfb:0x3fc1cd64d345c13f!8m2!3d13.0143881!4d77.567716!16zL20vMDljNmg?entry=ttu">Indian Institute of Science, <br>CV Raman Rd, Bengaluru, <br>Karnataka 560012
-		</a>
-	  </p>
-          <p style="margin:0;">
-	  <strong>Email: </strong><ul>
-		<li><a href="mailto:yashvardhan@iisc.ac.in">  yashvardhan@iisc.ac.in</a></li>
-			<li><a href="mailto:yvbhobia@gmail.com">yvbhobia@gmail.com</a></li>
-
-				</ul>
-          </p>
-        </div>
-
+      </div>
+      <div class="copyright text-muted">
+        © 2024 Yash Vardhan Bhobia. All rights reserved.
       </div>
     </div>
+  </footer>
 
-    <div class="text-center p-3">
-      <div class="social-links">
-        <!-- <a href="https://twitter.com/yourtwitter" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-        <a href="https://www.linkedin.com/in/yash-vardhan-b-1247321a3" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/Saintcyberwarrior" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <!-- Add more social media links as needed -->
-      </div>
-       <p>&copy; 2024 Yash Vardhan Bhobia. All rights reserved.</p>
-    </div>
-  </footer><!-- End Footer -->
-
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i></a>
-  <!--  Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script>
+    AOS.init();
+    GLightbox();
+    particlesJS.load('particles-background', 'js/particles-config.json');
+  </script>
 </body>
-
 </html>
